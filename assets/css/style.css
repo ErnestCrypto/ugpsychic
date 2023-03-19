@@ -10,6 +10,8 @@
 body{
 font-family: 'Lato', 'Arial', sans-serif;
 overflow-x: hidden;
+   
+
 }
 
 
@@ -17,7 +19,6 @@ overflow-x: hidden;
 nav{
     background: #281564;
      position: fixed !important; 
-   
      z-index:999;
      top: 0; 
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -36,14 +37,14 @@ nav{
     text-transform: uppercase !important;
     letter-spacing:3px;
      width: 40% !important;
-    /* background:green; */
+   
     display: flex;
     
     align-items: center;
 }
 
 .navbar-brand-text{
-    /* background: red; */
+   
     padding: 0px 10px;
    
 }
@@ -345,27 +346,40 @@ justify-content: center;
     align-items: center;
     justify-content:center;
      position: relative;
-   /* background: red; */
+   
+}
+
+.ab-left-09{
+     
+    display:flex;
+    align-items: center;
+    justify-content:center;
+     position: relative;
+   
 }
 
 .ab-pic{
     position: relative;
     height: 70vh;
-    background-image: url('../img/shutterstock_363517316.jpg');
+    background-image: url('../img/black-mental-health-scaled.jpg');
     background-size:cover ;
     background-repeat:no-repeat ;
     width: 30vw;
     border-radius: 5px;
+    background-position:center ;
+
 }
 
 .ab-pic-01{
     position: relative;
     height: 70vh;
-    background-image: url('../img/shutterstock_363517316.jpg');
+    background-image: url('../img/blog_post_01.jpg');
     background-size:cover ;
     background-repeat:no-repeat ;
     width: 30vw;
     border-radius: 5px;
+    background-position:center ;
+
 }
 
 
@@ -376,8 +390,9 @@ justify-content: center;
      top:20%;
      left:65%;
     border-radius: 10px;
-background-image: url('../img/shutterstock_363517316.jpg');
-    background-size:cover ;
+background-image: url('../img/young-woman-talks-to-attentive-therapist-royalty-free-image-1596745532.jpg');
+    background-size:cover;
+    background-position:center ;
     background-repeat:no-repeat ;
 
 }
@@ -389,17 +404,13 @@ background-image: url('../img/shutterstock_363517316.jpg');
      top:20%;
      right:65%;
     border-radius: 10px;
-background-image: url('../img/shutterstock_363517316.jpg');
+background-image: url('../img/find-therapist-same-cultural-background-community_1200W.jpg');
     background-size:cover ;
     background-repeat:no-repeat ;
+    
+
 
 }
-
-
-
-
-
-
 
 
 .ab-right{
@@ -488,7 +499,7 @@ font-weight: 700;
     justify-content: center;
    flex-direction: column;
     padding: 20px 0px;
-    /* background:red; */
+   
 }
 
 .content-01 img{
@@ -589,7 +600,7 @@ position: relative;
 .news{
 
     height: 100vh;
-     padding: 40px 0px;
+     padding: 40px 120px;
 }
 
 .news-head{
@@ -661,6 +672,7 @@ font-size: 14px;
     text-decoration: none;
     color: #42474c;
     font-weight: 400;
+    text-transform: capitalize;
 }
 
 .news-body-01-text p{
@@ -697,6 +709,206 @@ font-size: 14px;
 }
 
 
+/* start slider */
+.container-02-head{
+    font-size: 14px;
+    line-height: 16px;
+    color: white;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 19px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.container-02-head h3::before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -35px;
+
+}
+
+.container-02-head h3{
+    font-size: 36px;
+    line-height: 38px;
+    color: white;
+    position: relative;
+    padding-bottom: 26px;
+}
+.container-02-head h3 span{
+    font-weight:700;
+}
+
+
+.panel-thumbnail{
+    
+border-radius: 5px;
+text-align: left;
+padding-bottom: 10px;
+}
+
+.panel-thumbnail img{
+    opacity: 0.9;
+    height: 30vh;
+}
+
+.panel-thumbnail img:hover{
+    opacity: 1;
+}
+
+.panel-thumbnail h3{
+        color: white;
+        font-weight: 400;
+        text-transform: capitalize;
+    margin: 0 !important;
+    font-size:25px;
+}
+
+.panel-thumbnail p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: white;
+
+}
+
+.carousel-link{
+        outline: none;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+          color: white;
+
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.carousel-link:after{
+        font-family: 'FontAwesome';
+    content: '\f105';
+    display: inline-block;
+    vertical-align: middle;
+           color: white;
+
+    font-weight: 400;
+    margin-left: 10px;
+    margin-bottom: 2px;
+    transition: 0.5s all;
+}
+/* end slider */
+
+
+
+.footer-top{
+height: 40vh;
+position: relative;
+}
+
+.footer-top-01{
+    height: 50vh;
+background:white;
+position: absolute;
+top:0%;
+left:25%;
+ box-shadow: rgba(149, 157, 165, 0.336) 0px 8px 24px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+}
+.footer-top-01 h2{
+    text-transform: capitalize;
+}
+.footer-top-01 h2 span{
+    font-weight:700;
+}
+
+
+.footer-top-01 button{
+     font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+    font-weight: 700;
+    background-color: #281564;
+    border:2px solid #281564;
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 15px 50px 17px;
+    margin: 5px 7px 5px 0;
+    letter-spacing: 0.5px;
+    outline: none;
+    transition: all ease-in 0.2s;
+}
+
+.footer-top-01 button:hover{
+      border:2px solid #281564;
+      color:#281564;
+    background-color: transparent;
+}
+
+.footer-bottom{
+height: 20vh;
+background: #252525;
+
+}
+
+.footer-end{
+    height: 10vh;
+background: #2B2B2B;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.footer-end p{
+color:#758080;
+text-transform: capitalize;
+font-size: 12px;
+
+}
+.footer-end-01{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+
+}
+
+.footer-top-01 p{
+    color: #271D57;
+}
+
+
+.footer-end-02{
+display: flex;
+justify-content: center;
+align-items: center;
+vertical-align: middle;
+
+}
+.footer-end-01 a{
+    text-decoration: none;
+    outline: none;
+color:#758080;
+text-transform: capitalize;
+font-size: 12px;
+}
+
 
 /* index.html */
 
@@ -715,15 +927,19 @@ font-size: 14px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+    width: 100% !important;
+
 }
 
 .parallax-01 {
-	background-image: url("../img/pexels-photo-5699431.jpeg");
+	background-image: url("../img/woman-therapist-talking-to-female-patient-1296x728-header.webp");
 	background-size: cover;
 	padding: 82px 0 68px;
 	position: relative;
 	text-align: center;
 	z-index: 1;
+    width: 100% !important;
+
 }
 
 .parallax-01::after {
@@ -738,19 +954,16 @@ font-size: 14px;
 }
 
 
-
-
-
-
-
-
 .parallax-02 {
-	background-image: url("../img/pexels-photo-5699431.jpeg");
+	background-image: url("../img/best-online-therapy-header.png");
 	background-size: cover;
 	padding: 100px 0 68px;
 	position: relative;
 	text-align: center;
 	z-index: 1;
+    width: 100% !important;
+
+   
 }
 
 .parallax-02::after {
@@ -775,3 +988,345 @@ font-size: 14px;
 .parallax-02 .owl-theme-01__item-user-subtitle {
 	color: #fff;
 }
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
+        display: block;
+    }
+    
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+    
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+
+
+
+}
+
+ /* Bootstrap Lightbox using Modal */
+
+#profile-grid { overflow: auto; white-space: normal; } 
+#profile-grid .profile { padding-bottom: 40px; }
+#profile-grid .panel { padding: 0 }
+#profile-grid .panel-body { padding: 15px }
+#profile-grid .profile-name { font-weight: bold; }
+#profile-grid .thumbnail {margin-bottom:6px;}
+#profile-grid .panel-thumbnail { overflow: hidden; }
+#profile-grid .img-rounded { border-radius: 4px 4px 0 0;}
+
+
+
+
+@media only screen and (max-width: 600px){
+
+
+/* index.html */
+.jumbo{
+    width: 100% !important;
+}
+
+
+.navbar-brand img{
+    width: 25% !important;
+    margin: 0 !important;
+ 
+    
+}
+.navbar-brand-text p:nth-child(2){
+    font-size: 7px;
+    letter-spacing:5px;
+ margin: 0 !important;
+/* display: none;  */
+ 
+}
+
+.navbar-brand-text p{
+    font-size: 14px;
+}
+.nav-item{
+    font-size: 14px;
+    letter-spacing:1px;
+   
+}
+
+.navbar-brand-text{
+   
+    padding: 0px !important;
+   
+}
+
+.navbar-brand{
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.title-01{
+    font-size: 50px !important;
+      line-height: 48px;
+}
+
+
+
+
+.siblings{
+    height: inherit;
+    overflow: hidden;
+    width: 100% !important;
+   margin: 0% !important;
+  
+
+}
+.sibling-01,.sibling-02,.sibling-03{
+     padding: 56px 40px 68px;
+
+}
+
+.absolute-left{
+    padding: 20px 0px;
+    height: 100% !important;
+    width: 100% !important;
+  
+
+}
+
+.ab-pic-absolute{
+    height: 30vh;
+    width: 40vw;
+
+}
+.ab-pic{
+    height: 30vh;
+     width: 50vw;
+
+}
+
+.content-01 img{
+    margin-bottom: 0px !important;
+}
+.content-01 span{
+    height: 8vh;
+
+}
+
+.container-01 h4{
+    font-size: 28px;
+    margin: 0px !important;
+    
+}
+
+.container-01 p{
+    margin: 0px !important;
+
+}
+
+.ab-left-09{
+    justify-content: flex-end !important;
+  
+    padding-right:  50px !important;
+    
+    
+}
+.ab-left{
+    justify-content: flex-start !important;
+   
+    padding-left:  50px !important;
+    
+    
+}
+
+.ab-right{
+       padding: 56px 40px 68px;
+    
+
+
+}
+
+
+.ab-pic-01{
+    height: 30vh;
+     width: 50vw;
+    
+}
+
+.ab-pic-absolute-01{
+    height: 30vh;
+    width: 40vw;
+}
+
+.absolute-left{
+    width: 100% !important;
+
+}
+
+
+.meet-team{
+    padding: 60px 20px;
+    height: inherit !important;
+    width: 100% !important;
+   
+  
+   
+
+}
+
+.meet-team-body-01{
+padding:12px 0px ;
+
+}
+
+
+.meet-team-body-01-img{
+height: 30vh;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.meet-team-body-01-img img{
+    border-radius: 10px;
+
+}
+
+
+.container-02-head p{
+    font-size:18px;
+}
+
+.carousel-link,.panel-thumbnail p{
+    font-size: 18px;
+
+}
+
+.news{
+
+    height: inherit;
+     padding: 40px 40px;
+    width: 100% !important;
+   
+}
+.news-body-01{
+    height: inherit;
+    margin-bottom: 20px;
+    padding: 0px !important;
+}
+
+
+
+footer{
+    width: 100% !important;
+
+}
+
+
+
+.footer-top-01{
+    left:10% !important;
+    width: 80%;
+    padding: 0px 20px;
+  
+}
+
+
+.footer-end-01{
+justify-content: flex-start;
+   
+
+}
+
+
+.footer-end-02 p{
+margin: 0px !important;
+}
+
+
+.footer-end p{
+    font-size: 8px;
+
+}
+.footer-end-01 a{
+    font-size: 8px;
+    margin: 0px 3px;
+}
+
+/* index.html */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
