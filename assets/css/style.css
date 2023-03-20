@@ -39,6 +39,7 @@ nav{
 }
 
 
+
 .navbar-brand{
     text-transform: uppercase !important;
     letter-spacing:3px;
@@ -86,9 +87,26 @@ color:white;
 }
 
 .navbar-nav a,.navbar-brand{
-    color: #fff !important;
+    color: #fff;
     text-transform: capitalize;
 }
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+.active-nav {
+    color:#1e96be !important;
+}
+
+.navbar-brand-text p{
+    color: #fff;
+
+}
+
+
 #navbarNavAltMarkup{ 
 justify-content:flex-end;
 }
