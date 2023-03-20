@@ -1439,8 +1439,7 @@ font-weight: 700;
     display: flex;
     justify-content:space-evenly;
     align-items:center;
-    /* padding:0px 10px; */
-/* background: red; */
+    
 }
 
 #outof{
@@ -1903,6 +1902,21 @@ height:60vh;
 
 .explore-svg{
     padding: 30px 0px;
+}
+
+.explore-ans-01{
+    width: inherit;
+   
+    
+    padding: 0px 30px !important;
+}
+
+.explore-ans-01 p{
+    margin: 0% !important;
+   
+}
+.explore-ans-01 input{
+    margin-bottom: 12px;
 }
 
 /*  explore.html*/
