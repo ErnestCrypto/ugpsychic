@@ -64,11 +64,73 @@
 <!-- start explore-right -->
 <div class="col-sm-5 explore-right">
    <p>university of ghana pyschology department</p>
-   <h3>take a <span>psychology text</span></h3>
-   <div class="col-sm-12 explore-svg">
-    <img src="./assets/img/undraw_online_test_re_kyfx.svg" alt="">
-   </div> 
-   <a href="./questions.html"  title="get started">get started</a>
+   <h3>take a <span>psychology text</span></h3> 
+
+   <form action="" id = "myForm">
+<!-- start explore-right-01 -->
+   <div class="explore-right-01">
+    <div class="col-sm-12 text-center qustionLabel">
+        <p id="outof"></p>
+    </div>
+    <p id="questionbox">I am interested in working with very large or complex datasets, including unstructured (non-tabular)
+        data</p>
+
+<!-- start explore-ans -->
+<div class="explore-ans">
+    <div class=" explore-ans-01">
+        <input title="Strongly Disagree" type="radio" name="question" class="question" value="0" />
+        <p>Strongly Disagree</p>
+    </div>
+    <div class=" explore-ans-01">
+        <input title=" Disagree" type="radio" name="question" class="question" value="0" />
+        <p>Disagree</p>
+    </div>
+    <div class=" explore-ans-01">
+        <input title="Neutral" type="radio" name="question" class="question" value="0" />
+        <p>Neutral</p>
+    </div>
+    <div class=" explore-ans-01">
+        <input title="Agree" type="radio" name="question" class="question" value="75" />
+        <p>Agree</p>
+    </div>
+    <div class=" explore-ans-01">
+        <input title="Strongly Agree" type="radio" name="question"  class="question"value="100" />
+        <p> Strongly Agree</p>
+    </div>
+    </div>
+</div>
+<!-- end explore-ans -->
+
+    
+    <!-- start explore-right-btn -->
+    <div class="explore-right-btn">
+   <button type="button"   id="previousButton" title="previous"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+<button type="button"  id="nextButton" title="next" disabled><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+
+    </div>
+    <!-- end explore-right-btn -->
+</form>
+
+
+
+<!-- start result -->
+<div class="myResult" id="myResult">
+    <h1>You Got ...</h1>
+    <h2 id="myPercent">
+        0%</h2>
+<!-- start myprogress -->
+
+<div id="myProgress">
+    <div id="myBar"></div>
+</div>
+<!-- end myprogress -->
+</div>
+<!-- end result -->
+
+   </div>
+<!-- end explore-right-01 -->
+
+
 </div>
 <!-- end explore-right -->
 </div>
