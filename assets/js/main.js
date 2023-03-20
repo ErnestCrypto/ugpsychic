@@ -39,17 +39,17 @@ $(document).ready(function () {
 $(function () {
 
   const questions = [
-    " Interpreting data, analyzing results using statistical techniques  are some of the duties and responsibilities of a data analyst.",
-    " One of the process you follow when cleaning data is  making corrections to the data.",
-    " Are you familier with SPSS or have you ever heard of it.",
-    " Data Type Check is a data visualization method.",
-    " To conduct exploratory data analysis, data needs to be collected.",
+    " I frequently get depressed",
+    " I worry a lot about little things which may not be neccessary",
+    " I am easily angered",
+    " I sometimes have suicidal thoughts",
+    " I love being alone ",
     ];
   let answers = questions.map((_) => null);
   let current_index = 0;
-  $("#myForm").hide()
+  // $("#myForm").hide()
   $("#previousButton").hide();
-  // $("#myResult").hide();
+  $("#myResult").hide();
   $(".lds-spinner").hide();
 
   $("#questionbox").text(questions[current_index]);

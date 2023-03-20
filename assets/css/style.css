@@ -1425,6 +1425,12 @@ font-weight: 700;
 /* background: red; */
 }
 
+#outof{
+    font-weight: 700;
+    color:#6E6E6E;
+
+}
+
 .explore-ans-01{
     /* background:blue; */
     margin: 0% !important;
@@ -1438,6 +1444,13 @@ font-weight: 700;
     text-align: center;
 }
 
+.explore-right-01-text{
+     display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
 .explore-right-01 p{
     font-weight: 500;
     text-transform: none;
@@ -1448,6 +1461,9 @@ font-weight: 700;
 #questionbox{
     font-size: 16px;
     line-height: 22px;
+    font-weight: 600;
+    color:#6E6E6E;
+
 }
 
 
@@ -1463,12 +1479,12 @@ font-weight: 700;
 .myResult h2{
     color:#6E6E6E;
     font-weight:600;
-    margin:0%
+    
 }
 .myResult h1{
     color:#6E6E6E;
     font-weight:600;
-    margin:0%
+    
 }
 
 /* progress bar */
@@ -1486,6 +1502,9 @@ margin:0 auto;
   background: #281564;
     border-radius: 15px;
 
+}
+#restart{
+    margin:30px 0px;
 }
 /* progress bar */
 
