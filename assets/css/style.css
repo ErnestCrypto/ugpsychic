@@ -16,6 +16,11 @@ overflow-x: hidden;
 
 
 /* index.html */
+
+.index-body{
+    overflow:hidden;
+}
+
 nav{
     background: #281564;
      position: fixed !important; 
@@ -30,6 +35,7 @@ nav{
     line-height: 14px;
     color: #fff;
     font-weight: 700;
+   
 }
 
 
@@ -102,7 +108,6 @@ justify-content:flex-end;
     width: 100%;
     height: 100%;
     background-color: #0c1925;
-    /* background-color: rgb(0,0,0); */
 
     opacity: 0.5;
     z-index: -1;
@@ -164,7 +169,7 @@ justify-content:flex-start;
 }
 
 
-.button-container button:nth-child(1){
+.button-container a:nth-child(1){
     font-size: 12px;
     line-height: 14px;
     color: #fff;
@@ -181,9 +186,12 @@ justify-content:flex-start;
     letter-spacing: 0.5px;
     outline: none;
     transition: all ease-in 0.2s;
+    text-decoration: none;
+    text-align: center;
+
 }
 
-.button-container button:nth-child(1):hover{
+.button-container a:nth-child(1):hover{
      border:2px solid white;
     background-color: transparent;
      
@@ -192,7 +200,7 @@ justify-content:flex-start;
 
 
 
-.button-container button:nth-child(2){
+.button-container a:nth-child(2){
     font-size: 12px;
     line-height: 14px;
     color: #fff;
@@ -207,12 +215,15 @@ justify-content:flex-start;
     margin: 5px 7px 5px 0;
     letter-spacing: 0.5px;
     outline: none;
+    text-decoration: none;
     border:2px solid white;
     transition: ease-in-out 0.2s;
+    text-align: center;
+
     
 }
 
-.button-container button:nth-child(2):hover{
+.button-container a:nth-child(2):hover{
      border:2px solid #281564;
     background-color:#281564;
      
@@ -814,6 +825,7 @@ padding-bottom: 10px;
 .footer-top{
 height: 40vh;
 position: relative;
+
 }
 
 .footer-top-01{
@@ -837,7 +849,7 @@ flex-direction: column;
 }
 
 
-.footer-top-01 button{
+.footer-top-01 a{
      font-size: 12px;
     line-height: 14px;
     color: #fff;
@@ -854,9 +866,11 @@ flex-direction: column;
     letter-spacing: 0.5px;
     outline: none;
     transition: all ease-in 0.2s;
+    text-decoration: none;
+    text-align: center;
 }
 
-.footer-top-01 button:hover{
+.footer-top-01 a:hover{
       border:2px solid #281564;
       color:#281564;
     background-color: transparent;
@@ -911,16 +925,6 @@ font-size: 12px;
 
 
 /* index.html */
-
-
-
-
-
-
-
-
-
-
 /*// Parallax //*/
 .parallax {
 	background-attachment: fixed;
@@ -989,6 +993,295 @@ font-size: 12px;
 	color: #fff;
 }
 
+
+/* contact.html */
+.contact-form{
+    padding: 90px 90px ;
+}
+.form-left::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color:rgba(0,0,0,0.8);
+left: 0;
+top: 0;
+}
+
+
+.form-left{
+    position: relative;
+    padding: 20px ;
+   background-image: url("../img/woman-therapist-talking-to-female-patient-1296x728-header.webp");
+background-size:cover ;
+background-repeat: no-repeat;
+background-position: center;
+z-index: 1;
+
+
+}
+
+.form-left h6{
+font-size: 14px;
+    line-height: 16px;
+    color: white;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 18px;
+        text-transform: uppercase;
+    margin: 6px 0 0;
+    letter-spacing: 0.3px;
+}
+.form-input-head{
+      margin: 10px 0px;
+     
+}
+
+.form-input-head h6{
+font-size: 14px;
+    line-height: 16px;
+    color: white;
+    font-weight: 700;
+
+        text-transform: uppercase;
+  margin: 0% !important;
+    letter-spacing: 0.3px;
+}
+
+
+.form-left h3::before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+    height: 1px;
+    background-color: #d9e0e4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.form-left h3{
+font-size: 36px;
+    line-height: 38px;
+    color: white;
+    position: relative;
+    padding-bottom: 26px;
+    margin-bottom: 31px;
+}
+.form-left h3 span{
+    font-weight: 700;
+
+}
+
+
+.form-left p{
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.form-control{
+    background:transparent;
+    border: 1px solid white;
+    margin: 0px 12px;
+color:white !important;
+     
+}
+
+.form-control:focus{
+    background:transparent;
+color:white;
+}
+
+
+
+.form-input{
+    padding: 0px !important;
+   padding-top: 50px !important;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.form-input textarea{
+     margin: 20px 10px !important;
+}
+
+.form-control{
+    margin: 0px 10px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #e7e8e9;
+   
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.form-right{
+  
+    padding: 0 !important;
+}
+
+.form-right iframe{
+width:100%;
+height:100%;
+border:0;
+
+}
+
+.form-input textarea{
+    margin: 10px 0px;
+    width: 100%;
+    resize: none;
+    border: 1px solid white ;
+    border-radius: 5px;
+    padding: 13px 20px;
+    height: 120px;
+    
+}
+
+.form-input button{
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 18px 29px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4eaac8;
+    letter-spacing: 0.5px;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+        margin: 0px 10px;
+        outline: none;
+
+}
+
+.form-input button:hover{
+    background-color: #1e96be;
+
+}
+
+.form-input button:hover{
+    outline: none;
+
+
+}
+
+
+/* contact.html */
+
+
+
+
+
+/* about.html */
+.about-body{
+    padding: 100px 0px;
+    overflow: hidden;
+}
+
+.about-slide{
+    background: #281564;
+    text-align: center;
+    padding: 10px 0px;
+    margin: 50px 0px;
+
+}
+
+.about-start{
+    display: flex;
+    align-items: center;
+justify-content: center;
+
+
+}
+
+.about-start-01{
+    height: 60vh;
+    margin-bottom: 20px;
+	background-image: url("../img/best-online-therapy-header.png");
+background-size:cover ;
+background-repeat: no-repeat;
+background-position: center;
+
+
+}
+
+
+.about-start-02{
+    height: 60vh;
+  padding-left: 50px;
+}
+
+.about-start-02 p{
+    font-size: 14px;
+    line-height: 16px;
+    color: #5c656d;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.about-start-02 h3::before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+    height: 1px;
+    background-color: #d9e0e4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.about-start-02 h3{
+    font-size: 36px;
+    line-height: 38px;
+    color: #42474c;
+    position: relative;
+    padding-bottom: 26px;
+    margin-bottom: 31px;
+}
+
+.about-start-02 h3 span{
+    font-weight: 700;
+}
+
+.adout-start-02-text p{
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5c656d;
+    font-weight: 300;
+    margin-bottom: 5px;
+    text-transform: none;
+}
+
+
+
+/* about.html */
+
+
+/* explore.html */
+.explore-body{
+    height: 100vh;
+    padding: 100px 0px;
+}
+/* explore.html  */
 
 
 
@@ -1097,7 +1390,6 @@ font-size: 12px;
     font-size: 7px;
     letter-spacing:5px;
  margin: 0 !important;
-/* display: none;  */
  
 }
 
@@ -1105,8 +1397,12 @@ font-size: 12px;
     font-size: 14px;
 }
 .nav-item{
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing:1px;
+    padding: 18px 0px !important;
+    text-transform: uppercase !important;
+    font-weight: 400 !important; 
+
    
 }
 
@@ -1148,7 +1444,6 @@ font-size: 12px;
     padding: 20px 0px;
     height: 100% !important;
     width: 100% !important;
-  
 
 }
 
@@ -1311,7 +1606,47 @@ margin: 0px !important;
     margin: 0px 3px;
 }
 
+
+
+
 /* index.html */
+
+
+/* contact.html */
+.contact-form{
+    padding: 90px 0px ;
+    padding-left: 30px;
+    
+    width: 100% !important;
+    
+}
+
+
+.form-right iframe{
+
+height:60vh;
+
+
+}
+
+
+.form-control{
+    margin: 10px 10px;
+}
+
+/* contact.html */
+
+/* about.html */
+
+/* about.html */
+.about-start-01{
+    margin:0px 20px;
+
+
+}
+
+
+
 
 }
 
