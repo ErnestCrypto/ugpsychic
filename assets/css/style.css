@@ -1280,7 +1280,25 @@ background-position: center;
 .explore-body{
     height: 100vh;
     padding: 100px 0px;
+    overflow: hidden;
 }
+.explore-01{
+    display: flex;
+    align-items: center;
+justify-content: center;
+}
+
+.explore-left{
+    height: 60vh;
+    margin-bottom: 20px;
+	background-image: url("../img/best-online-therapy-header.png");
+background-size:cover ;
+background-repeat: no-repeat;
+background-position: center;
+
+
+}
+
 /* explore.html  */
 
 
