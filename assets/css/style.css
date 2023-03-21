@@ -491,7 +491,7 @@ font-weight: 700;
     margin-bottom: 5px;
 }
 
-.ab-right button{
+.ab-right a{
   font-size: 12px;
     line-height: 14px;
     color: #281564;
@@ -506,11 +506,13 @@ font-weight: 700;
     margin: 5px 7px 5px 0;
     letter-spacing: 0.5px;
     outline: none;
+    text-decoration: none;
+    outline: none;
     border:2px solid #281564;
     transition: ease-in-out 0.2s;  
 }
 
-.ab-right button:hover{
+.ab-right a:hover{
      border:2px solid #281564;
     background-color:#281564;
     color:#fff;
