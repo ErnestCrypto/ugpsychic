@@ -25,6 +25,8 @@
 
 </head>
 <body>
+<div class="history"></div>
+
 <!-- start nav -->
 <nav class="navbar navbar-expand-lg navbar-light">
     <span class="navbar-brand" href="#">
@@ -127,7 +129,11 @@
 <div id="myProgress">
     <div id="myBar"></div>
 </div>
-<button type="button" id="restart" title="try again" >try again</button>
+<div class="button-cont">
+<button type="button" id="restart" title="try again">try again</button>
+<button id="view" title="try again">results</button>
+
+</div>
 
 <!-- end myprogress -->
 </div>
@@ -142,8 +148,24 @@
 </div>
 <!-- end explore-01 -->
 
+<!-- start result -->
+<div class="result col-sm-6">
+<!-- start result-cont -->
+<div class="icon">
+    <h4>results</h4>
+<i class="fa fa-times" aria-hidden="true" id="closebtn"></i>
 
+</div>
+<hr>
 
+    <div class="result-cont">
+        <p id="ques-res"></p>
+    </div>
+<!-- start result-cont -->
+
+    
+</div>
+<!-- end result -->
 </section>
 <!-- end explore-body -->
 

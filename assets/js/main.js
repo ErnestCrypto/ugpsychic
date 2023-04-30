@@ -34,23 +34,20 @@ $(document).ready(function () {
   });
 });
 
-
-
 $(function () {
-
   const questions = [
     " I frequently get depressed",
     " I worry a lot about little things which may not be neccessary",
     " I am easily angered",
     " I sometimes have suicidal thoughts",
     " I love being alone ",
-    ];
+  ];
   let answers = questions.map((_) => null);
   let current_index = 0;
   // $("#myForm").hide()
   $("#previousButton").hide();
   $("#myResult").hide();
-  $(".lds-spinner").hide();
+$(".result").hide();
 
   $("#questionbox").text(questions[current_index]);
   $("#outof").text(`QUESTION ${current_index + 1} OF ${questions.length}`);
@@ -120,7 +117,7 @@ $(function () {
     outcome = parseInt(outcome);
     $("#myPercent").text(outcome + "%");
     progress();
-   
+
     $("#myResult").show();
   };
 
@@ -146,5 +143,74 @@ $(function () {
   };
 
   
-});
+ $("#view").click(() => {
+   $(".result").show();
+  
+   questions.map((a, b, c) => {
+     function choosenAns(){
+     if(answers[b]==0){
+      return "<Strongly Disagree<";
+     }
+     else if (answers[b] == 25) {
+       return "Disagree";
+     }
+     else if (answers[b] == 50) {
+       return "Neutral";
+     }
+     else if (answers[b] == 75) {
+       return "Agree";
+     }
+     else if (answers[b] == 100) {
+       return "Strongly Agree";
+     }
+   }
+    let paragraphs = document.createElement("p");
+     paragraphs.innerHTML +=
+       "<h5>" +
+       (b + 1) +
+       ". " +
+       a +
+       "</h5>" +
+       "<p> Your Ans: " +
+       (choosenAns()) +
+       "</p>";
+     document.querySelector(".result-cont").appendChild(paragraphs);
+   });
+ });
 
+
+ $("#closebtn").click(() => {
+   $(".result").hide();
+ });
+
+
+
+  // let view = document.querySelector("#view");
+  // let paragraphs = document.createElement("p");
+  // view.onclick = (elems) => {
+  //   document
+  //     .querySelector(".history")
+  //     .appendChild(document.createElement("div"))
+  //     .classList.add("res");
+  //   let closer = document.createElement("div");
+  //   closer.classList.add("close");
+  //   closer.innerHTML = "x";
+  //   document.querySelector(".res").appendChild(closer);
+
+  //   questions.map((a, b, c) => {
+  //     paragraphs.innerHTML +=
+  //       "<p>" +
+  //       (b + 1) +
+  //       ". " +
+  //       a +
+  //       "</p>" +
+  //       (answers[b] + answers ? answers[b] : "unset") +
+  //       "<br/>";
+  //     document.querySelector(".res").appendChild(paragraphs);
+  //   });
+  // };
+
+
+
+
+});
