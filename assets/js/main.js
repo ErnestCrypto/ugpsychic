@@ -148,8 +148,8 @@ $(".result").hide();
   
    questions.map((a, b, c) => {
      function choosenAns(){
-     if(answers[b]==0){
-      return "<Strongly Disagree<";
+     if(answers[b]== 0){
+      return "Strongly Disagree";
      }
      else if (answers[b] == 25) {
        return "Disagree";
