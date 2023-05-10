@@ -472,12 +472,13 @@ background-image: url('../img/find-therapist-same-cultural-background-community_
 
 .title-02{
 font-size: 36px;
-    line-height: 38px;
-    color: #42474c;
-    position: relative;
-    padding-bottom: 26px;
-    margin-bottom: 31px;
+line-height: 38px;
+color: #42474c;
+position: relative;
+padding-bottom: 26px;
+margin-bottom: 31px;
 }
+
 .title-02 span{
 font-weight: 700;
 }
@@ -1419,10 +1420,16 @@ font-weight: 700;
     color: #281564;
 }
 
-
+.explore-svg{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .explore-svg img{
-    width:60%;
+    width:70%;
+
 }
 
 
@@ -1561,10 +1568,7 @@ margin:0 auto;
 
 
 
-.result{
-   
 
-}
 
 .result button{
      font-size: 12px;
@@ -2000,9 +2004,7 @@ height:60vh;
     
 }
 
-.explore-left{
-/* display: none; */
-}
+
 
 .explore-svg{
     padding: 30px 0px;
