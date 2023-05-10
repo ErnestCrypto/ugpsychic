@@ -42,6 +42,7 @@ $(function () {
     " I sometimes have suicidal thoughts",
     " I love being alone ",
     
+    
   ];
   let answers = questions.map((_) => null);
   let current_index = 0;
