@@ -41,13 +41,14 @@ $(function () {
     " I am easily angered",
     " I sometimes have suicidal thoughts",
     " I love being alone ",
+    
   ];
   let answers = questions.map((_) => null);
   let current_index = 0;
   // $("#myForm").hide()
   $("#previousButton").hide();
   $("#myResult").hide();
-$(".result").hide();
+ $(".explore-right-02").hide();
 
   $("#questionbox").text(questions[current_index]);
   $("#outof").text(`QUESTION ${current_index + 1} OF ${questions.length}`);
@@ -119,6 +120,7 @@ $(".result").hide();
     progress();
 
     $("#myResult").show();
+    resultShow();
   };
 
   var progress = () => {
@@ -142,29 +144,23 @@ $(".result").hide();
     }
   };
 
-  
- $("#view").click(() => {
-   $(".result").show();
-  
+  var resultShow =()=>{
+
    questions.map((a, b, c) => {
-     function choosenAns(){
-     if(answers[b]== 0){
-      return "Strongly Disagree";
+     function choosenAns() {
+       if (answers[b] == 0) {
+         return "Strongly Disagree";
+       } else if (answers[b] == 25) {
+         return "Disagree";
+       } else if (answers[b] == 50) {
+         return "Neutral";
+       } else if (answers[b] == 75) {
+         return "Agree";
+       } else if (answers[b] == 100) {
+         return "Strongly Agree";
+       }
      }
-     else if (answers[b] == 25) {
-       return "Disagree";
-     }
-     else if (answers[b] == 50) {
-       return "Neutral";
-     }
-     else if (answers[b] == 75) {
-       return "Agree";
-     }
-     else if (answers[b] == 100) {
-       return "Strongly Agree";
-     }
-   }
-    let paragraphs = document.createElement("p");
+     let paragraphs = document.createElement("p");
      paragraphs.innerHTML +=
        "<h5>" +
        (b + 1) +
@@ -172,15 +168,25 @@ $(".result").hide();
        a +
        "</h5>" +
        "<p> Your Ans: " +
-       (choosenAns()) +
+       choosenAns() +
        "</p>";
      document.querySelector(".result-cont").appendChild(paragraphs);
    });
+  }
+
+  
+ $("#view").click(() => {
+   $(".explore-right-02").show();
+   $(".explore-right").hide();
+
+  
  });
 
 
  $("#closebtn").click(() => {
-   $(".result").hide();
+   $(".explore-right-02").hide();
+   $(".explore-right").show();
+
  });
 
 

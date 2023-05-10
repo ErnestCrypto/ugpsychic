@@ -846,10 +846,11 @@ padding-bottom: 10px;
 height: 40vh;
 position: relative;
 
+
 }
 
 .footer-top-01{
-    height: 50vh;
+height: 50vh;
 background:white;
 position: absolute;
 top:0%;
@@ -1300,29 +1301,59 @@ background-position: center;
 .explore-body{
     padding: 100px 0px;
     overflow: hidden;
+    height: inherit;
+    
 }
 .explore-01{
-    display: flex;
-    align-items: center;
+ display: flex;
+align-items: center;
 justify-content: center;
+
+
 }
 
 .explore-left{
-    height: 80vh;
+    height:80vh;
     margin-bottom: 20px;
 	background-image: url("../img/photo-1542330952-bffc55e812b2.avif");
 background-size:cover ;
 background-repeat: no-repeat;
 background-position: center;
-
-
 }
+
+.explore-left-02{
+    height: 80vh;
+    margin-bottom: 20px;
+	background-image: url("../img/find-therapist-same-cultural-background-community_1200W.jpg");
+background-size:cover ;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+
+
+
 .explore-right{
     height: 80vh;
     margin-bottom: 20px;
 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 padding: 20px;
+/* display:none; */
 }
+
+.explore-right-02{
+    height: 80vh;
+    top:0;
+    margin-bottom: 20px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+padding: 20px;
+overflow-y: scroll;
+
+}
+
+
+
+
 
 .explore-right p{
 font-size: 14px;
@@ -1451,7 +1482,7 @@ font-weight: 700;
 }
 
 .explore-ans-01{
-    /* background:blue; */
+   
     margin: 0% !important;
     overflow: hidden;
     height:20vh;
@@ -1528,14 +1559,11 @@ margin:0 auto;
 /* progress bar */
 
 
+
+
 .result{
-    background:white;
-    /* height: 80vh; */
-    position: absolute;
-    top:30%;
-    left:25%;
-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-padding: 10px 20px;
+   
+
 }
 
 .result button{
@@ -1557,10 +1585,7 @@ padding: 10px 20px;
     transition: all ease-in 0.2s;
    
 }
-.result h5{
-color:#6E6E6E;
-    font-weight:600;
-}
+
 .result hr{
     width: 90%;
     text-align: center;
@@ -1586,9 +1611,16 @@ color:#6E6E6E;
      font-weight:600;
 }
 .result-cont p{
-    color:#281564;    
+color:#6E6E6E;
+
      font-weight:600;
 }
+.result h5{
+    color:#281564;  
+
+    font-weight:600;
+}
+
 .icon i:hover{
     color:rgb(28, 188, 236);
 }
@@ -1965,6 +1997,11 @@ height:60vh;
 
 .explore-right{
     height: inherit;
+    
+}
+
+.explore-left{
+/* display: none; */
 }
 
 .explore-svg{
@@ -1974,9 +2011,7 @@ height:60vh;
 padding: 0px 10px;
 }
 .explore-ans-01{
-    width: inherit;
-   
-    
+    width: inherit; 
     padding: 0px 30px !important;
 }
 
@@ -1993,8 +2028,9 @@ padding: 0px 10px;
     justify-content: space-around;
 }
 
-.result{
-    left:0;
+
+.explore-right button{
+    margin: 0px 15px;
 }
 
 /*  explore.html*/
