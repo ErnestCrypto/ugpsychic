@@ -36,13 +36,26 @@ $(document).ready(function () {
 
 $(function () {
   const questions = [
-    " I frequently get depressed",
-    " I worry a lot about little things which may not be neccessary",
-    " I am easily angered",
-    " I sometimes have suicidal thoughts",
-    " I love being alone ",
-    
-    
+    " I feel sad.",
+    " I feel agitated or restless (I pace, am unable to stay calm, or need to move constantly).",
+    " I feel worn out.",
+    " I feel so guilty that I can barely take it.",
+    " When I wake up in the morning, I feel like there is nothing to look forward to.",
+    " I think about death.",
+    " When needed, I can make up my mind quickly.",
+    " I get mad at myself if I do not achieve the goals I have set out to reach.",
+    " When something is bothering me, I cannot stop thinking about it.	",
+    " When things go wrong in my life, I feel like I will never get over it.",
+    " When I have a bad argument with a friend or loved one, I believe that it will end the relationship.",
+    " I have a persistent feeling of emptiness.",
+    " I feel slowed down (physically or mentally).",
+    " I feel tired even after a good rest.",
+    " I feel bad about myself.",
+    " I have recurrent thoughts about ending my life.",
+    " Even when forces beyond my control prevent me from reaching a goal, I still find a way to blame myself.",
+    " I keep myself up at night thinking about the things going on in my life.",
+    " If I am struggling in work or in school, I tend to think it is because I am not smart enough.",
+    " I feel like crying for no apparent reason.",
   ];
   let answers = questions.map((_) => null);
   let current_index = 0;
@@ -115,7 +128,7 @@ $(function () {
         total += score;
       }
     });
-    outcome = (total / 500) * 100;
+    outcome = (total / 2000) * 100;
     outcome = parseInt(outcome);
     $("#myPercent").text(outcome + "%");
     progress();
