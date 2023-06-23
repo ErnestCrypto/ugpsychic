@@ -329,7 +329,7 @@ width: 40%;
 }
 
 
-.logincontainer input[type="text"],input[type="password"],input[type="email"]{
+.logincontainer input[type="text"],input[type="password"]{
     padding:2%;
     margin: 5%;
     width:100%;
