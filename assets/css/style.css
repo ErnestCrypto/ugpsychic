@@ -15,6 +15,358 @@ overflow-x: hidden;
 }
 
 
+/* login.html */
+.logincontain{
+
+padding: 50px;
+
+
+display:flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ text-align: center;
+}
+
+
+.box{
+ text-align: center;
+    position: relative;
+min-width:380px;
+    height: 520px;
+  
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow: hidden;
+    
+}
+
+.box::before{
+content: " ";
+position: absolute;
+top:-50%;
+left:-50%;
+min-width:380px;
+    height: 620px;
+    background: linear-gradient(0deg,transparent, #4C5CED,
+   #4C5CED);
+    transform-origin: bottom right;
+    animation:animate 6s linear infinite;
+}
+
+
+.box::after{
+content: " ";
+position: absolute;
+top:-50%;
+left:-50%;
+min-width:380px;
+    height: 620px;
+    background: linear-gradient(0deg,transparent,
+    #4C5CED,#4C5CED);
+    transform-origin: bottom right;
+    animation:animate 6s linear infinite;
+    animation-delay:-3s;
+}
+
+
+.box2{
+    position: relative;
+min-width:980px;
+    height: 620px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow: hidden;
+    
+}
+
+.box2::before{
+content: " ";
+position: absolute;
+top:-50%;
+left:-50%;
+min-width:980px;
+    height: 620px;
+    background: linear-gradient(0deg,transparent, #4C5CED,
+   #4C5CED);
+    transform-origin: bottom right;
+    animation:animate 6s linear infinite;
+}
+
+
+.box2::after{
+content: " ";
+position: absolute;
+top:-50%;
+left:-50%;
+min-width:980px;
+    height: 620px;
+    background: linear-gradient(0deg,transparent,
+    #4C5CED,#4C5CED);
+    transform-origin: bottom right;
+    animation:animate 6s linear infinite;
+    animation-delay:-3s;
+}
+
+
+
+
+
+@keyframes animate {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+
+
+
+
+.form{
+    position:absolute;
+    inset:2px;
+    background:white;
+    z-index: 10;
+    padding: 0 !important;
+
+
+
+}
+
+.form h1{
+color:#4C5CED;
+font-weight: 700;
+text-align: center;
+margin:5px;
+}
+
+.form h2{
+color:black;
+font-weight: 700;
+font-size: 21px;
+text-align: center;
+letter-spacing:0.1em;
+}
+
+
+.count{
+    position:relative;
+    z-index: 9;
+   padding:10px;
+
+}
+
+.count a{
+    margin: 0 !important;
+    padding:0 !important;
+}
+
+
+.countabsolute{
+    position:absolute;
+    z-index: 10;
+    font-size: 10px;
+    top: 0%;
+    right: 0%;
+    text-align: center;
+    border-radius: 32px;
+    background:#4C5CED;
+   display: flex;
+   align-items: center;
+   justify-content:center;
+   width: 50%;
+   height: 50%;
+
+
+}
+
+.countabsolute input{
+    border:none;
+    outline:none;
+    background:none;
+    color: white;
+
+    text-align: center;
+    pointer-events: none;
+    width: inherit;
+   height: inherit;
+
+}
+
+.loginleft{
+ height: inherit;
+ width: inherit;
+ 
+padding: 0% !important;
+}
+
+
+.logincontainer{
+
+padding-top: 50px;
+
+padding-right: 30px;
+padding-left: 10px;
+
+ 
+
+}
+
+.logincontainer img{
+width: 40%;
+}
+
+
+
+.logincontainer h2{
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom: 35px;
+    color:black;
+}
+
+
+.logincontainer input[type="text"],input[type="password"],input[type="email"]{
+    padding:2%;
+    margin: 5%;
+    width:100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+
+}
+
+
+
+
+.logincontainer input[type="submit"]{
+    padding:2%;
+    margin: 5%;
+    width:50%;
+    outline: none;
+    border: none;
+  
+    color:white;
+    background:#384AEB;
+    border: 1px solid #384AEB;
+    overflow:hidden;
+    transition: 0.4s ease-in-out;
+
+}
+
+
+.logincontainer input[type="submit"]:hover{
+    background:white;
+    color:#384AEB;
+}
+
+
+
+.logincontainer a{
+   font-size: 13px;
+   text-transform: capitalize;
+   color:rgba(0,0,0,0.5);
+    text-decoration: none;
+
+
+}
+
+.logincontainer a:nth-child(1){
+   font-size: 13px;
+   text-transform: capitalize;
+        color:#4C5CED;
+    
+}
+
+.logincontainer a:hover{
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+
+.logincontainer label{
+   text-transform: capitalize;
+   font-weight: 300;    
+}
+
+.space{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.logincontainer p:hover{
+   color:#4C5CED;
+}
+
+
+
+.loginright{
+background: #4C5CED;
+ height: 100vh;
+ padding-top:5%;
+ display:flex;
+ align-items: center;
+ flex-direction: column;
+ color: #fff;
+ text-align: center;
+}
+
+
+
+
+.loginright a{
+    color:white;
+    padding:2% 8%;
+    border:1px solid white;
+    border-radius: 25px;
+    transition:0.4s ease-in-out;
+    text-decoration: none;
+}
+
+
+.loginright a:hover{
+color:#4C5CED;
+background:white;
+    text-decoration: none;
+
+}
+
+.loginright a:focus{
+    text-decoration: none;
+}
+
+
+.loginright img{
+    width: 80%;
+}
+
+.imgcont{
+    background:white;
+    padding:5% 0%;
+    border-radius:5px;
+    margin-bottom: 2%;
+}
+
+
+/* login.html */
+
+
+
+
+
+
+
+
+
+
 /* index.html */
 
 .index-body{
@@ -2036,6 +2388,11 @@ padding: 0px 10px;
 }
 
 /*  explore.html*/
+
+/* Login.html */
+
+
+/* Login/html */
 
 
 }
